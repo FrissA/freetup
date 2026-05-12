@@ -118,10 +118,13 @@ export function ClickMeButton() {
         fontSize: '14px',
         fontWeight: 600,
         cursor: 'pointer',
-        transition: 'background 0.2s',
+        opacity: 0.4,
+        transition: 'background 0.2s, opacity 0.2s ease-in-out',
       }}
+      onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+      onMouseLeave={e => (e.currentTarget.style.opacity = '0.4')}
     >
-      Unlocker: {enabled ? 'ON' : 'OFF'}
+      Freetup: {enabled ? 'ON' : 'OFF'}
     </button>
   );
 }
