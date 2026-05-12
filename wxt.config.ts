@@ -5,5 +5,6 @@ export default defineConfig({
   modules: ['@wxt-dev/module-react'],
   manifest: {
     permissions: ['storage'],
+    description: 'Remove (simple) paywalls from meetup.com'
   },
 });

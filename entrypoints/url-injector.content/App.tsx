@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useRuleStore } from './store';
-import { ClickMeButton } from './components/ClickMeButton';
+import { TogglePaywall } from './components/TogglePaywall';
 
 const componentMap: Record<string, React.FC> = {
-  ClickMeButton,
+  TogglePaywall,
 };
 
 export function App() {

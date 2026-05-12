@@ -28,7 +28,7 @@ function oneShotCleanup() {
   document.querySelectorAll<HTMLElement>('[role="dialog"][data-slot="modal-content"]').forEach(el => el.remove());
 }
 
-export function ClickMeButton() {
+export function TogglePaywall() {
   const [enabled, setEnabled] = useState(true);
   const observers = useRef<MutationObserver[]>([]);
   const wheelHandler = useRef<((e: WheelEvent) => void) | null>(null);
@@ -110,10 +110,10 @@ export function ClickMeButton() {
         bottom: '24px',
         right: '24px',
         zIndex: 999999,
-        background: enabled ? '#16a34a' : '#dc2626',
+        background: '#FF4B79',
         color: '#fff',
         border: 'none',
-        borderRadius: '6px',
+        borderRadius: '10px',
         padding: '10px 20px',
         fontSize: '14px',
         fontWeight: 600,
