@@ -9,7 +9,7 @@ export interface Rule {
 export const rules: Rule[] = [
   {
     id: 'contains-m',
-    test: (url) => url.includes('m'),
+    test: (url) => url.includes('meetup.com'),
     componentKey: 'ClickMeButton',
   },
 ];
