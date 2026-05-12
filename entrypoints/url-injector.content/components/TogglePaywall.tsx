@@ -110,7 +110,7 @@ export function TogglePaywall() {
         bottom: '24px',
         right: '24px',
         zIndex: 999999,
-        background: '#FF4B79',
+        background: enabled ? '#4CAF50' : '#FF4B79',
         color: '#fff',
         border: 'none',
         borderRadius: '10px',

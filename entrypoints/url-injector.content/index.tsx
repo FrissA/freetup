@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom/client';
-import { App } from './App';
+import { TogglePaywall } from './components/TogglePaywall';
 
 export default defineContentScript({
-  matches: ['<all_urls>'],
+  matches: ['*://*.meetup.com/*'],
 
   main(ctx) {
     const ui = createIntegratedUi(ctx, {
@@ -10,7 +10,7 @@ export default defineContentScript({
       anchor: 'body',
       onMount(container) {
         const root = ReactDOM.createRoot(container);
-        root.render(<App />);
+        root.render(<TogglePaywall />);
         return root;
       },
       onRemove(root) {

@@ -16,6 +16,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   gap: 12px;
 }
 
@@ -38,5 +40,5 @@ body {
 }
 
 .popup-github:hover {
-  color: #FF4B79;
+  color: #C2C4C3;
 }
